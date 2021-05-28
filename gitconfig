@@ -1,0 +1,33 @@
+[alias]
+  st = status
+  co = checkout
+  ci = commit
+  d = diff
+  lp = log -p
+  ps = log --pretty=oneline origin..master
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -- 
+  l = log --pretty=oneline
+[user]
+	name = j-dogcoder
+	email = j.dogcoder@gmail.com
+	signingkey = 7B3FA8DDE42FE539
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = nano
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2
+[push]
+        default = tracking
+[color]
+        ui = true
+[pull]
+	rebase = true
+[init]
+	defaultBranch = master
