@@ -1,4 +1,4 @@
-#J-dogcoder's dotfiles
+# J-dogcoder's dotfiles
 
 This project is idempotent, so you can run it multiple times without any side effects.
 
