@@ -1,3 +1,4 @@
+
 alias nvd='cd ~/desktop/coding/projects/pegasusworkspace/pegasus'                            
 alias npd='cd ~/desktop/coding/projects/pegasusworkspace'
 alias nvm='cd ~/desktop/coding/projects/pegasusworkspace/medusa'
@@ -10,6 +11,9 @@ alias .start='yarn start'
 alias .dev='yarn dev'
 alias hepta.start='hepta && .start'
 
+alias dtf='cd && cd ~/.dotfiles'
+
+
 alias cmt='git add . && gitmoji -c'
 alias cmts='gitmoji -s'
 
@@ -18,7 +22,7 @@ alias pull='git pull'
 alias s='git status'
 alias g='git'
 
-alias aliasedit='cd && nano .zshrc'
+alias alias\ edit/='cd && nano .zshrc'
 alias aliassave='source ~/.zshrc'
 alias starshipedit='nano ~/.config/starship.toml'
 
@@ -40,9 +44,8 @@ alias b='brew'
 alias proj='cd ~/desktop/coding/projects'
 alias hack='cd ~/desktop/coding/hacking'
 
-eval "$(starship init zsh)"
-
 export GPG_TTY=$(tty)
-
-# Created by `pipx` on 2021-06-02 00:04:54
 export PATH="$PATH:/Users/jasper/.local/bin"
+export STARSHIP_CACHE=~/.starship/cache
+
+eval "$(starship init zsh)"
